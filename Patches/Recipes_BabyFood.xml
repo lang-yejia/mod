@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Allow raw meat to satisfy the ingredient requirement for both vanilla recipes. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/RecipeDef[defName="Make_BabyFood" or defName="Make_BabyFoodBulk"]/ingredients/li/filter/categories</xpath>
+    <value>
+      <li>MeatRaw</li>
+    </value>
+  </Operation>
+
+  <!-- The bill-level filter independently excludes meat in the vanilla recipes. -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/RecipeDef[defName="Make_BabyFood" or defName="Make_BabyFoodBulk"]/fixedIngredientFilter/disallowedCategories/li[text()="MeatRaw"]</xpath>
+  </Operation>
+
+  <!-- Let RimWorld generate an accurate ingredient summary instead of "vegetarian ingredients". -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/RecipeDef[defName="Make_BabyFood" or defName="Make_BabyFoodBulk"]/ingredients/li/filter/customSummary</xpath>
+  </Operation>
+</Patch>

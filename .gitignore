@@ -1,0 +1,12 @@
+# RimWorld-generated publishing metadata
+About/PublishedFileId.txt
+
+# Local development files
+*.user
+*.suo
+.vs/
+.vscode/
+
+# Operating system files
+Thumbs.db
+.DS_Store

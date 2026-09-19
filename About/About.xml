@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>More Baby Food Recipes</name>
+  <author>lyj</author>
+  <packageId>langyejia.morebabyfoodrecipes</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>Ludeon.RimWorld.Biotech</packageId>
+      <displayName>Biotech</displayName>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld.Biotech</li>
+  </loadAfter>
+  <description>Adds raw meat to the ingredients accepted by the vanilla baby food and bulk baby food recipes. Everything else, including workbenches, yield, stats, and graphics, remains unchanged.
+
+为原版婴儿食品和批量制作婴儿食品配方加入生肉原料。制作地点、产量、属性和贴图等其他内容保持原版设定。</description>
+</ModMetaData>
