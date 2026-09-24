@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PU_PrecisionToolModule.label>精密工具组</PU_PrecisionToolModule.label>
+  <PU_PrecisionToolModule.description>由强化精密导轨、校准传动装置和替换工具组成的套件，用于工具柜的第一级强化。</PU_PrecisionToolModule.description>
+  <PU_UltraPrecisionToolModule.label>超精密加工组</PU_UltraPrecisionToolModule.label>
+  <PU_UltraPrecisionToolModule.description>由精细致动器、减振装置和计量仪器组成的高密度组件，用于工具柜的第二级强化。</PU_UltraPrecisionToolModule.description>
+  <PU_PersonaToolController.label>人格核心协调器</PU_PersonaToolController.label>
+  <PU_PersonaToolController.description>将人格核心与强化机械控制硬件结合而成的协调器。它能实时调度工具柜，发现材料浪费，并在精度误差毁掉产品前进行修正。</PU_PersonaToolController.description>
+  <PU_GravFieldCalibrationAssembly.label>逆重场校准组件</PU_GravFieldCalibrationAssembly.label>
+  <PU_GravFieldCalibrationAssembly.description>由场传感器、铀谐振器和控制硬件组成，用于逆重引擎的第一级升级。</PU_GravFieldCalibrationAssembly.description>
+  <PU_GravResonanceController.label>逆重谐振控制器</PU_GravResonanceController.label>
+  <PU_GravResonanceController.description>经过精密调谐的引力控制单元，可以扩展引擎的设施控制能力并回收原本浪费的场能。</PU_GravResonanceController.description>
+  <PU_MultiphaseGravCore.label>多相引力核心</PU_MultiphaseGravCore.label>
+  <PU_MultiphaseGravCore.description>将逆重核重构为多相调节器，使引擎能够协调完整配置的逆重飞船并储存大量逆重能量。</PU_MultiphaseGravCore.description>
+</LanguageData>

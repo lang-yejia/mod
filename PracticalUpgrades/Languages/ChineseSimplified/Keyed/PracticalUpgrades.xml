@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PU_LevelStandard>标准工具柜</PU_LevelStandard>
+  <PU_LevelPrecision>精密工具柜</PU_LevelPrecision>
+  <PU_LevelUltraPrecision>超精密工具柜</PU_LevelUltraPrecision>
+  <PU_LevelPersona>人格协调工具柜</PU_LevelPersona>
+  <PU_InstallUpgradeLabel>安装{0}</PU_InstallUpgradeLabel>
+  <PU_InstallUpgradeDesc>命令建造者安装{0}。安装完成时会消耗对应升级模块。</PU_InstallUpgradeDesc>
+  <PU_CancelUpgradeLabel>取消升级</PU_CancelUpgradeLabel>
+  <PU_CancelUpgradeDesc>取消当前升级并清除安装进度。升级模块不会被消耗。</PU_CancelUpgradeDesc>
+  <PU_ResearchRequired>需要研究：{0}</PU_ResearchRequired>
+  <PU_UpgradeLevel>升级状态：{0}</PU_UpgradeLevel>
+  <PU_WorkSpeedBonus>工作速度增益：{0}</PU_WorkSpeedBonus>
+  <PU_InstallProgress>安装进度：{0}</PU_InstallProgress>
+  <PU_MaterialRecovery>材料回收率：{0}</PU_MaterialRecovery>
+  <PU_QualityShift>品质偏移概率：{0}</PU_QualityShift>
+  <PU_UpgradeComplete>{0}已升级为{1}。</PU_UpgradeComplete>
+  <PU_InstallingUpgradeReport>正在为TargetA安装升级模块。</PU_InstallingUpgradeReport>
+  <PU_NoUpgradeModule>没有可用的{0}。</PU_NoUpgradeModule>
+  <PU_ConstructionSkillRequired>需要建造技能达到{0}级。</PU_ConstructionSkillRequired>
+  <PU_InfoUpgradeLevel>工具柜升级等级</PU_InfoUpgradeLevel>
+  <PU_InfoProvidedWorkSpeed>提供的工作速度系数</PU_InfoProvidedWorkSpeed>
+  <PU_InfoMaterialRecovery>提供的材料回收率</PU_InfoMaterialRecovery>
+  <PU_InfoQualityShift>提供的品质提升概率</PU_InfoQualityShift>
+  <PU_InfoWorkTableMaterialRecovery>升级工具柜：材料回收率</PU_InfoWorkTableMaterialRecovery>
+  <PU_InfoWorkTableQualityShift>升级工具柜：品质提升概率</PU_InfoWorkTableQualityShift>
+  <PU_CabinetSummaryReport>当前工具柜等级：{0}。&#10;连接并生效时，对每个受影响工作台提供：工作速度 {1}，材料回收 {2}，品质提升 {3}。&#10;同一工作台最多同时接收两台工具柜的效果。</PU_CabinetSummaryReport>
+  <PU_WorkTableEffectsIntro>此工作台当前正在接收升级工具柜效果。原版“工作速度系数”条目会显示最终速度数值以及每台工具柜的影响。</PU_WorkTableEffectsIntro>
+  <PU_EffectSources>生效中的工具柜：</PU_EffectSources>
+  <PU_EffectSourceLine>• {0}：工作速度 {1}，材料回收 {2}，品质提升 {3}</PU_EffectSourceLine>
+  <PU_MaterialRecoveryRule>完成非食物制造配方时，每个符合条件的普通原料单位都会独立判定是否返还。品质物品、生物、尸体和食材不会被返还；多台工具柜的合计上限为 {0}。</PU_MaterialRecoveryRule>
+  <PU_QualityShiftRule>配方产物具有品质且尚未达到传奇时，每件成品独立判定是否向上提升一个品质等级。该效果不会跨越传奇；多台工具柜的合计上限为 {0}。</PU_QualityShiftRule>
+  <PU_GravLevelUncalibrated>未校准逆重引擎</PU_GravLevelUncalibrated>
+  <PU_GravLevelCalibrated>基础校准逆重引擎</PU_GravLevelCalibrated>
+  <PU_GravLevelResonant>谐振控制逆重引擎</PU_GravLevelResonant>
+  <PU_GravLevelMultiphase>多相调制逆重引擎</PU_GravLevelMultiphase>
+  <PU_GravUpgradeLevel>引擎升级状态：{0}</PU_GravUpgradeLevel>
+  <PU_GravSlotLimits>设施槽位：场扩展器 {0}，小型推进器 {1}，大型推进器 {2}</PU_GravSlotLimits>
+  <PU_GravPowerOutput>内置发电：{0} W</PU_GravPowerOutput>
+  <PU_GravEnergyInspect>逆重能量：{0} / {1}（每日 +{2}，单次最多抵消 {3} 燃料）</PU_GravEnergyInspect>
+  <PU_GravEnergyTitle>逆重能量</PU_GravEnergyTitle>
+  <PU_GravEnergyBar>{0} / {1}</PU_GravEnergyBar>
+  <PU_GravEnergyTooltip>引擎停留在地图上时每日恢复 {0} 点。起飞时可按 1:1 抵消化合燃料，本等级单次最多抵消原始消耗的 {1}。</PU_GravEnergyTooltip>
+  <PU_AutoUseGravEnergyLabel>自动使用逆重能量</PU_AutoUseGravEnergyLabel>
+  <PU_AutoUseGravEnergyDesc>起飞时自动消耗逆重能量，在当前等级允许的比例内返还化合燃料。关闭后会保留全部能量。</PU_AutoUseGravEnergyDesc>
+  <PU_GravEnergyFuelSaved>逆重能量抵消了 {0} 化合燃料；本次实际消耗 {1}。</PU_GravEnergyFuelSaved>
+</LanguageData>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Odyssey</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="GravEngine"]/comps</xpath>
+          <value>
+            <li Class="PracticalUpgrades.CompProperties_UpgradeableGravEngine">
+              <upgradeLevels>
+                <li>
+                  <labelKey>PU_GravLevelUncalibrated</labelKey>
+                  <gravFieldExtenderLimit>2</gravFieldExtenderLimit>
+                  <smallThrusterLimit>2</smallThrusterLimit>
+                  <largeThrusterLimit>0</largeThrusterLimit>
+                </li>
+                <li>
+                  <labelKey>PU_GravLevelCalibrated</labelKey>
+                  <moduleDef>PU_GravFieldCalibrationAssembly</moduleDef>
+                  <requiredResearch>BasicGravtech</requiredResearch>
+                  <installWork>2500</installWork>
+                  <constructionSkill>6</constructionSkill>
+                  <gravFieldExtenderLimit>3</gravFieldExtenderLimit>
+                  <smallThrusterLimit>3</smallThrusterLimit>
+                  <largeThrusterLimit>0</largeThrusterLimit>
+                  <powerOutput>1000</powerOutput>
+                  <energyCapacity>100</energyCapacity>
+                  <energyRechargePerDay>20</energyRechargePerDay>
+                  <maxFuelOffsetFraction>0.25</maxFuelOffsetFraction>
+                </li>
+                <li>
+                  <labelKey>PU_GravLevelResonant</labelKey>
+                  <moduleDef>PU_GravResonanceController</moduleDef>
+                  <requiredResearch>StandardGravtech</requiredResearch>
+                  <installWork>4500</installWork>
+                  <constructionSkill>8</constructionSkill>
+                  <gravFieldExtenderLimit>4</gravFieldExtenderLimit>
+                  <smallThrusterLimit>4</smallThrusterLimit>
+                  <largeThrusterLimit>4</largeThrusterLimit>
+                  <powerOutput>2000</powerOutput>
+                  <energyCapacity>250</energyCapacity>
+                  <energyRechargePerDay>50</energyRechargePerDay>
+                  <maxFuelOffsetFraction>0.50</maxFuelOffsetFraction>
+                </li>
+                <li>
+                  <labelKey>PU_GravLevelMultiphase</labelKey>
+                  <moduleDef>PU_MultiphaseGravCore</moduleDef>
+                  <requiredResearch>AdvancedGravtech</requiredResearch>
+                  <installWork>7000</installWork>
+                  <constructionSkill>10</constructionSkill>
+                  <gravFieldExtenderLimit>6</gravFieldExtenderLimit>
+                  <smallThrusterLimit>4</smallThrusterLimit>
+                  <largeThrusterLimit>6</largeThrusterLimit>
+                  <powerOutput>3000</powerOutput>
+                  <energyCapacity>500</energyCapacity>
+                  <energyRechargePerDay>100</energyRechargePerDay>
+                  <maxFuelOffsetFraction>0.75</maxFuelOffsetFraction>
+                </li>
+              </upgradeLevels>
+            </li>
+            <li Class="PracticalUpgrades.CompProperties_GravEnginePower" />
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

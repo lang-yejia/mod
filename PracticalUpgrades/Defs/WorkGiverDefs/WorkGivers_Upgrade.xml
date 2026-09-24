@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WorkGiverDef>
+    <defName>PU_UpgradeFacility</defName>
+    <label>install facility upgrade</label>
+    <giverClass>PracticalUpgrades.WorkGiver_UpgradeFacility</giverClass>
+    <workType>Construction</workType>
+    <priorityInType>85</priorityInType>
+    <verb>install upgrade on</verb>
+    <gerund>installing upgrade on</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <scanThings>true</scanThings>
+    <directOrderable>true</directOrderable>
+  </WorkGiverDef>
+</Defs>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>PU_PrecisionToolModule</defName>
+    <label>precision tool assembly</label>
+    <description>A set of hardened precision guides, calibrated drives, and replacement tools for the first tool cabinet upgrade.</description>
+    <graphicData>
+      <texPath>PracticalUpgrades/Items/PrecisionToolModule</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <Mass>8</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>PU_UltraPrecisionToolModule</defName>
+    <label>ultra-precision machining assembly</label>
+    <description>A dense array of fine actuators, vibration dampers, and metrology instruments for the second tool cabinet upgrade.</description>
+    <graphicData>
+      <texPath>PracticalUpgrades/Items/UltraPrecisionToolModule</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <techLevel>Spacer</techLevel>
+    <statBases>
+      <Mass>15</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>PU_PersonaToolController</defName>
+    <label>persona tool controller</label>
+    <description>A persona core integrated with hardened machine-control hardware. It can coordinate a tool cabinet in real time, catching waste and correcting precision errors before they ruin a product.</description>
+    <graphicData>
+      <texPath>PracticalUpgrades/Items/PersonaToolController</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <techLevel>Ultra</techLevel>
+    <statBases>
+      <Mass>20</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>PU_GravFieldCalibrationAssembly</defName>
+    <label>grav-field calibration assembly</label>
+    <description>A set of field sensors, uranium resonators, and control hardware used to perform the first grav engine upgrade.</description>
+    <graphicData>
+      <texPath>PracticalUpgrades/Items/PrecisionToolModule</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <techLevel>Industrial</techLevel>
+    <statBases><Mass>10</Mass></statBases>
+    <thingCategories><li>Manufactured</li></thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>PU_GravResonanceController</defName>
+    <label>grav resonance controller</label>
+    <description>A precisely tuned gravitic control unit that expands the engine's facility control capacity and recovers otherwise wasted field energy.</description>
+    <graphicData>
+      <texPath>PracticalUpgrades/Items/UltraPrecisionToolModule</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <techLevel>Spacer</techLevel>
+    <statBases><Mass>18</Mass></statBases>
+    <thingCategories><li>Manufactured</li></thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase" MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>PU_MultiphaseGravCore</defName>
+    <label>multiphase grav core</label>
+    <description>A gravcore rebuilt into a multiphase regulator capable of coordinating a fully equipped gravship while storing large amounts of gravitic energy.</description>
+    <graphicData>
+      <texPath>PracticalUpgrades/Items/PersonaToolController</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <techLevel>Ultra</techLevel>
+    <statBases><Mass>25</Mass></statBases>
+    <thingCategories><li>Manufactured</li></thingCategories>
+  </ThingDef>
+</Defs>

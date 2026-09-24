@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PU_LevelStandard>standard tool cabinet</PU_LevelStandard>
+  <PU_LevelPrecision>precision tool cabinet</PU_LevelPrecision>
+  <PU_LevelUltraPrecision>ultra-precision tool cabinet</PU_LevelUltraPrecision>
+  <PU_LevelPersona>persona-coordinated tool cabinet</PU_LevelPersona>
+  <PU_InstallUpgradeLabel>Install {0}</PU_InstallUpgradeLabel>
+  <PU_InstallUpgradeDesc>Order a constructor to install {0}. The upgrade module will be consumed when installation finishes.</PU_InstallUpgradeDesc>
+  <PU_CancelUpgradeLabel>Cancel upgrade</PU_CancelUpgradeLabel>
+  <PU_CancelUpgradeDesc>Cancel the pending upgrade and discard its installation progress. The module is not consumed.</PU_CancelUpgradeDesc>
+  <PU_ResearchRequired>Requires research: {0}</PU_ResearchRequired>
+  <PU_UpgradeLevel>Upgrade: {0}</PU_UpgradeLevel>
+  <PU_WorkSpeedBonus>Work speed bonus: {0}</PU_WorkSpeedBonus>
+  <PU_InstallProgress>Installation progress: {0}</PU_InstallProgress>
+  <PU_MaterialRecovery>Material recovery: {0}</PU_MaterialRecovery>
+  <PU_QualityShift>Quality shift chance: {0}</PU_QualityShift>
+  <PU_UpgradeComplete>{0} has been upgraded to {1}.</PU_UpgradeComplete>
+  <PU_InstallingUpgradeReport>Installing upgrade on TargetA.</PU_InstallingUpgradeReport>
+  <PU_NoUpgradeModule>No {0} is available.</PU_NoUpgradeModule>
+  <PU_ConstructionSkillRequired>Requires construction skill {0}.</PU_ConstructionSkillRequired>
+  <PU_InfoUpgradeLevel>Tool cabinet upgrade level</PU_InfoUpgradeLevel>
+  <PU_InfoProvidedWorkSpeed>Work speed factor provided</PU_InfoProvidedWorkSpeed>
+  <PU_InfoMaterialRecovery>Material recovery provided</PU_InfoMaterialRecovery>
+  <PU_InfoQualityShift>Quality shift chance provided</PU_InfoQualityShift>
+  <PU_InfoWorkTableMaterialRecovery>Upgraded cabinets: material recovery</PU_InfoWorkTableMaterialRecovery>
+  <PU_InfoWorkTableQualityShift>Upgraded cabinets: quality shift chance</PU_InfoWorkTableQualityShift>
+  <PU_CabinetSummaryReport>Current cabinet level: {0}.&#10;While linked and active, it provides each affected work table with: work speed {1}, material recovery {2}, quality shift {3}.&#10;A work table can benefit from at most two tool cabinets at once.</PU_CabinetSummaryReport>
+  <PU_WorkTableEffectsIntro>This work table is currently receiving upgraded tool cabinet effects. The vanilla Work Speed Factor entry shows the final speed value and the contribution from each cabinet.</PU_WorkTableEffectsIntro>
+  <PU_EffectSources>Active tool cabinets:</PU_EffectSources>
+  <PU_EffectSourceLine>• {0}: work speed {1}, material recovery {2}, quality shift {3}</PU_EffectSourceLine>
+  <PU_MaterialRecoveryRule>When a non-food crafting recipe finishes, every eligible ordinary ingredient unit independently rolls to be returned. Quality-bearing items, pawns, corpses, and food ingredients are excluded. The combined cap from multiple cabinets is {0}.</PU_MaterialRecoveryRule>
+  <PU_QualityShiftRule>Each quality-bearing product below Legendary independently rolls to move up exactly one quality tier. The effect cannot exceed Legendary. The combined cap from multiple cabinets is {0}.</PU_QualityShiftRule>
+  <PU_GravLevelUncalibrated>uncalibrated grav engine</PU_GravLevelUncalibrated>
+  <PU_GravLevelCalibrated>calibrated grav engine</PU_GravLevelCalibrated>
+  <PU_GravLevelResonant>resonance-controlled grav engine</PU_GravLevelResonant>
+  <PU_GravLevelMultiphase>multiphase grav engine</PU_GravLevelMultiphase>
+  <PU_GravUpgradeLevel>Engine upgrade: {0}</PU_GravUpgradeLevel>
+  <PU_GravSlotLimits>Facility slots: field extenders {0}, small thrusters {1}, large thrusters {2}</PU_GravSlotLimits>
+  <PU_GravPowerOutput>Built-in power: {0} W</PU_GravPowerOutput>
+  <PU_GravEnergyInspect>Grav energy: {0} / {1} (+{2} per day, up to {3} fuel offset per launch)</PU_GravEnergyInspect>
+  <PU_GravEnergyTitle>Grav energy</PU_GravEnergyTitle>
+  <PU_GravEnergyBar>{0} / {1}</PU_GravEnergyBar>
+  <PU_GravEnergyTooltip>Recovers {0} energy per day while the engine is on a map. On launch, energy offsets chemfuel at 1:1, up to {1} of the unmodified cost at this level.</PU_GravEnergyTooltip>
+  <PU_AutoUseGravEnergyLabel>Auto-use grav energy</PU_AutoUseGravEnergyLabel>
+  <PU_AutoUseGravEnergyDesc>Automatically spend grav energy on launch and refund chemfuel up to this upgrade level's limit. Disable this to save all stored energy.</PU_AutoUseGravEnergyDesc>
+  <PU_GravEnergyFuelSaved>Grav energy offset {0} chemfuel; this launch consumed {1}.</PU_GravEnergyFuelSaved>
+</LanguageData>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>PU_UpgradeFacility</defName>
+    <driverClass>PracticalUpgrades.JobDriver_UpgradeFacility</driverClass>
+    <reportString>PU_InstallingUpgradeReport</reportString>
+    <suspendable>true</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+</Defs>

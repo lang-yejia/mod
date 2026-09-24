@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>PU_MakePrecisionToolModule</defName>
+    <label>make precision tool assembly</label>
+    <description>Make a level I tool cabinet upgrade module.</description>
+    <jobString>Making a precision tool assembly.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5000</workAmount>
+    <ingredients>
+      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>80</count></li>
+      <li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>30</count></li>
+      <li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>3</count></li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs><li>Steel</li><li>Plasteel</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter>
+    <products><PU_PrecisionToolModule>1</PU_PrecisionToolModule></products>
+    <skillRequirements><Crafting>7</Crafting></skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>PU_ModularToolSystems</researchPrerequisite>
+    <recipeUsers><li>FabricationBench</li></recipeUsers>
+    <displayPriority>10</displayPriority>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>PU_MakeUltraPrecisionToolModule</defName>
+    <label>make ultra-precision machining assembly</label>
+    <description>Make a level II tool cabinet upgrade module.</description>
+    <jobString>Making an ultra-precision machining assembly.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>8000</workAmount>
+    <ingredients>
+      <li><filter><thingDefs><li>Gold</li></thingDefs></filter><count>50</count></li>
+      <li><filter><thingDefs><li>Uranium</li></thingDefs></filter><count>40</count></li>
+      <li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>75</count></li>
+      <li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs><li>Gold</li><li>Uranium</li><li>Plasteel</li><li>ComponentSpacer</li></thingDefs></fixedIngredientFilter>
+    <products><PU_UltraPrecisionToolModule>1</PU_UltraPrecisionToolModule></products>
+    <skillRequirements><Crafting>10</Crafting></skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>PU_ModularToolSystems</researchPrerequisite>
+    <recipeUsers><li>FabricationBench</li></recipeUsers>
+    <displayPriority>11</displayPriority>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>PU_MakePersonaToolController</defName>
+    <label>make persona tool controller</label>
+    <description>Integrate a persona core into a level III tool cabinet upgrade module.</description>
+    <jobString>Integrating a persona tool controller.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>12000</workAmount>
+    <ingredients>
+      <li><filter><thingDefs><li>AIPersonaCore</li></thingDefs></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>100</count></li>
+      <li><filter><thingDefs><li>Uranium</li></thingDefs></filter><count>100</count></li>
+      <li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>4</count></li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs><li>AIPersonaCore</li><li>Plasteel</li><li>Uranium</li><li>ComponentSpacer</li></thingDefs></fixedIngredientFilter>
+    <products><PU_PersonaToolController>1</PU_PersonaToolController></products>
+    <skillRequirements><Crafting>12</Crafting></skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>PU_ModularToolSystems</researchPrerequisite>
+    <recipeUsers><li>FabricationBench</li></recipeUsers>
+    <displayPriority>12</displayPriority>
+  </RecipeDef>
+
+  <RecipeDef MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>PU_MakeGravFieldCalibrationAssembly</defName>
+    <label>make grav-field calibration assembly</label>
+    <description>Make the level I grav engine upgrade module.</description>
+    <jobString>Making a grav-field calibration assembly.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5000</workAmount>
+    <ingredients>
+      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>80</count></li>
+      <li><filter><thingDefs><li>Uranium</li></thingDefs></filter><count>20</count></li>
+      <li><filter><thingDefs><li>GravlitePanel</li></thingDefs></filter><count>5</count></li>
+      <li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>3</count></li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs><li>Steel</li><li>Uranium</li><li>GravlitePanel</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter>
+    <products><PU_GravFieldCalibrationAssembly>1</PU_GravFieldCalibrationAssembly></products>
+    <skillRequirements><Crafting>6</Crafting></skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>BasicGravtech</researchPrerequisite>
+    <recipeUsers><li>TableMachining</li></recipeUsers>
+    <displayPriority>20</displayPriority>
+  </RecipeDef>
+
+  <RecipeDef MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>PU_MakeGravResonanceController</defName>
+    <label>make grav resonance controller</label>
+    <description>Make the level II grav engine upgrade module.</description>
+    <jobString>Making a grav resonance controller.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>8000</workAmount>
+    <ingredients>
+      <li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>60</count></li>
+      <li><filter><thingDefs><li>Uranium</li></thingDefs></filter><count>40</count></li>
+      <li><filter><thingDefs><li>GravlitePanel</li></thingDefs></filter><count>20</count></li>
+      <li><filter><thingDefs><li>Gold</li></thingDefs></filter><count>10</count></li>
+      <li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>2</count></li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs><li>Plasteel</li><li>Uranium</li><li>GravlitePanel</li><li>Gold</li><li>ComponentSpacer</li></thingDefs></fixedIngredientFilter>
+    <products><PU_GravResonanceController>1</PU_GravResonanceController></products>
+    <skillRequirements><Crafting>9</Crafting></skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>StandardGravtech</researchPrerequisite>
+    <recipeUsers><li>TableMachining</li></recipeUsers>
+    <displayPriority>21</displayPriority>
+  </RecipeDef>
+
+  <RecipeDef MayRequire="Ludeon.RimWorld.Odyssey">
+    <defName>PU_MakeMultiphaseGravCore</defName>
+    <label>make multiphase grav core</label>
+    <description>Rebuild a gravcore into the level III grav engine upgrade module.</description>
+    <jobString>Making a multiphase grav core.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>14000</workAmount>
+    <ingredients>
+      <li><filter><thingDefs><li>Gravcore</li></thingDefs></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>120</count></li>
+      <li><filter><thingDefs><li>Uranium</li></thingDefs></filter><count>80</count></li>
+      <li><filter><thingDefs><li>GravlitePanel</li></thingDefs></filter><count>60</count></li>
+      <li><filter><thingDefs><li>Gold</li></thingDefs></filter><count>30</count></li>
+      <li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>5</count></li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs><li>Gravcore</li><li>Plasteel</li><li>Uranium</li><li>GravlitePanel</li><li>Gold</li><li>ComponentSpacer</li></thingDefs></fixedIngredientFilter>
+    <products><PU_MultiphaseGravCore>1</PU_MultiphaseGravCore></products>
+    <skillRequirements><Crafting>12</Crafting></skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>AdvancedGravtech</researchPrerequisite>
+    <recipeUsers><li>FabricationBench</li></recipeUsers>
+    <displayPriority>22</displayPriority>
+  </RecipeDef>
+</Defs>

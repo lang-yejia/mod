@@ -6,6 +6,9 @@ About/PublishedFileId.txt
 *.suo
 .vs/
 .vscode/
+.tools/
+**/bin/
+**/obj/
 
 # Operating system files
 Thumbs.db

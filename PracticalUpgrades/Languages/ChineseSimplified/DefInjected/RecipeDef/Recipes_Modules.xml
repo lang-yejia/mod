@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PU_MakePrecisionToolModule.label>制作精密工具组</PU_MakePrecisionToolModule.label>
+  <PU_MakePrecisionToolModule.description>制作一级工具柜强化模块。</PU_MakePrecisionToolModule.description>
+  <PU_MakePrecisionToolModule.jobString>正在制作精密工具组。</PU_MakePrecisionToolModule.jobString>
+  <PU_MakeUltraPrecisionToolModule.label>制作超精密加工组</PU_MakeUltraPrecisionToolModule.label>
+  <PU_MakeUltraPrecisionToolModule.description>制作二级工具柜强化模块。</PU_MakeUltraPrecisionToolModule.description>
+  <PU_MakeUltraPrecisionToolModule.jobString>正在制作超精密加工组。</PU_MakeUltraPrecisionToolModule.jobString>
+  <PU_MakePersonaToolController.label>制作人格核心协调器</PU_MakePersonaToolController.label>
+  <PU_MakePersonaToolController.description>将人格核心集成到三级工具柜强化模块中。</PU_MakePersonaToolController.description>
+  <PU_MakePersonaToolController.jobString>正在集成人格核心协调器。</PU_MakePersonaToolController.jobString>
+  <PU_MakeGravFieldCalibrationAssembly.label>制作逆重场校准组件</PU_MakeGravFieldCalibrationAssembly.label>
+  <PU_MakeGravFieldCalibrationAssembly.description>制作一级逆重引擎升级模块。</PU_MakeGravFieldCalibrationAssembly.description>
+  <PU_MakeGravFieldCalibrationAssembly.jobString>正在制作逆重场校准组件。</PU_MakeGravFieldCalibrationAssembly.jobString>
+  <PU_MakeGravResonanceController.label>制作逆重谐振控制器</PU_MakeGravResonanceController.label>
+  <PU_MakeGravResonanceController.description>制作二级逆重引擎升级模块。</PU_MakeGravResonanceController.description>
+  <PU_MakeGravResonanceController.jobString>正在制作逆重谐振控制器。</PU_MakeGravResonanceController.jobString>
+  <PU_MakeMultiphaseGravCore.label>制作多相引力核心</PU_MakeMultiphaseGravCore.label>
+  <PU_MakeMultiphaseGravCore.description>将逆重核重构为三级逆重引擎升级模块。</PU_MakeMultiphaseGravCore.description>
+  <PU_MakeMultiphaseGravCore.jobString>正在制作多相引力核心。</PU_MakeMultiphaseGravCore.jobString>
+</LanguageData>
