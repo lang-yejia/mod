@@ -340,6 +340,9 @@ namespace PracticalUpgrades
                 return;
             }
 
+            string previousLabel = CurrentLevel != null
+                ? CurrentLevel.Label.CapitalizeFirst()
+                : parent.def.LabelCap.ToString();
             upgradeLevel++;
             upgradeWorkDone = 0f;
             Notify_ThingChanged();
@@ -348,7 +351,7 @@ namespace PracticalUpgrades
             {
                 parent.DirtyMapMesh(parent.Map);
                 parent.Map.designationManager.TryRemoveDesignationOn(parent, PUDesignationDefOf.PU_UpgradeFacility);
-                Messages.Message("PU_UpgradeComplete".Translate(parent.LabelCap, CurrentLevel.Label), parent, MessageTypeDefOf.PositiveEvent);
+                Messages.Message("PU_UpgradeComplete".Translate(previousLabel, CurrentLevel.Label), parent, MessageTypeDefOf.PositiveEvent);
             }
         }
     }

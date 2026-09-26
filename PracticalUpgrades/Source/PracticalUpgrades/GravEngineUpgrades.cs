@@ -173,9 +173,9 @@ namespace PracticalUpgrades
 
             string text = "PU_GravUpgradeLevel".Translate(level.Label)
                 + "\n" + "PU_GravSlotLimits".Translate(
-                    level.gravFieldExtenderLimit,
-                    level.smallThrusterLimit,
-                    level.largeThrusterLimit)
+                    DisplaySlotLimit("GravFieldExtender"),
+                    DisplaySlotLimit("SmallThruster"),
+                    DisplaySlotLimit("LargeThruster"))
                 + "\n" + "PU_GravPowerOutput".Translate(level.powerOutput.ToString("F0"))
                 + "\n" + "PU_GravEnergyInspect".Translate(
                     gravEnergy.ToString("F1"),
@@ -189,6 +189,62 @@ namespace PracticalUpgrades
             }
 
             return text;
+        }
+
+        public override IEnumerable<StatDrawEntry> SpecialDisplayStats()
+        {
+            IEnumerable<StatDrawEntry> baseEntries = base.SpecialDisplayStats();
+            if (baseEntries != null)
+            {
+                foreach (StatDrawEntry entry in baseEntries)
+                {
+                    yield return entry;
+                }
+            }
+
+            GravEngineUpgradeLevel level = CurrentLevel;
+            if (level == null)
+            {
+                yield break;
+            }
+
+            int extenderLimit = DisplaySlotLimit("GravFieldExtender");
+            int smallThrusterLimit = DisplaySlotLimit("SmallThruster");
+            int largeThrusterLimit = DisplaySlotLimit("LargeThruster");
+            string slots = "PU_GravSlotValue".Translate(extenderLimit, smallThrusterLimit, largeThrusterLimit);
+            string report = GravEngineReport(level, extenderLimit, smallThrusterLimit, largeThrusterLimit);
+
+            yield return FacilityInfoUtility.Entry(
+                "PU_InfoGravUpgradeLevel".Translate(), level.Label, report, 2790);
+            yield return FacilityInfoUtility.Entry(
+                "PU_InfoGravFacilitySlots".Translate(), slots, report, 2780);
+            yield return FacilityInfoUtility.Entry(
+                "PU_InfoGravPowerOutput".Translate(), level.powerOutput.ToString("F0") + " W", report, 2770);
+            yield return FacilityInfoUtility.Entry(
+                "PU_InfoGravEnergyStorage".Translate(), level.energyCapacity.ToString("F0"), report, 2760);
+            yield return FacilityInfoUtility.Entry(
+                "PU_InfoGravEnergyRecharge".Translate(),
+                "PU_GravPerDayValue".Translate(level.energyRechargePerDay.ToString("F0")),
+                report,
+                2750);
+            yield return FacilityInfoUtility.Entry(
+                "PU_InfoGravFuelOffset".Translate(), level.maxFuelOffsetFraction.ToStringPercent("F0"), report, 2740);
+        }
+
+        private string GravEngineReport(
+            GravEngineUpgradeLevel level,
+            int extenderLimit,
+            int smallThrusterLimit,
+            int largeThrusterLimit)
+        {
+            return "PU_GravUpgradeLevel".Translate(level.Label)
+                + "\n" + "PU_GravSlotLimits".Translate(extenderLimit, smallThrusterLimit, largeThrusterLimit)
+                + "\n" + "PU_GravPowerOutput".Translate(level.powerOutput.ToString("F0"))
+                + "\n" + "PU_GravEnergyInspect".Translate(
+                    gravEnergy.ToString("F1"),
+                    level.energyCapacity.ToString("F0"),
+                    level.energyRechargePerDay.ToString("F0"),
+                    level.maxFuelOffsetFraction.ToStringPercent("F0"));
         }
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
@@ -303,6 +359,9 @@ namespace PracticalUpgrades
                 return;
             }
 
+            string previousLabel = CurrentLevel != null
+                ? CurrentLevel.Label.CapitalizeFirst()
+                : parent.def.LabelCap.ToString();
             upgradeLevel++;
             upgradeWorkDone = 0f;
             gravEnergy = Mathf.Min(gravEnergy, CurrentLevel.energyCapacity);
@@ -317,7 +376,7 @@ namespace PracticalUpgrades
             if (parent.Spawned)
             {
                 parent.Map.designationManager.TryRemoveDesignationOn(parent, PUDesignationDefOf.PU_UpgradeFacility);
-                Messages.Message("PU_UpgradeComplete".Translate(parent.LabelCap, CurrentLevel.Label), parent, MessageTypeDefOf.PositiveEvent);
+                Messages.Message("PU_UpgradeComplete".Translate(previousLabel, CurrentLevel.Label), parent, MessageTypeDefOf.PositiveEvent);
             }
         }
 
@@ -340,6 +399,33 @@ namespace PracticalUpgrades
                 case "SmallThruster": return Mathf.Max(level.smallThrusterLimit, grandfatheredSmallThrusterLimit);
                 case "LargeThruster": return Mathf.Max(level.largeThrusterLimit, grandfatheredLargeThrusterLimit);
                 default: return -1;
+            }
+        }
+
+        private int DisplaySlotLimit(string facilityDefName)
+        {
+            GravEngineUpgradeLevel level = CurrentLevel;
+            if (level == null)
+            {
+                return 0;
+            }
+
+            switch (facilityDefName)
+            {
+                case "GravFieldExtender":
+                    return slotLimitsInitialized
+                        ? Mathf.Max(level.gravFieldExtenderLimit, grandfatheredExtenderLimit)
+                        : level.gravFieldExtenderLimit;
+                case "SmallThruster":
+                    return slotLimitsInitialized
+                        ? Mathf.Max(level.smallThrusterLimit, grandfatheredSmallThrusterLimit)
+                        : level.smallThrusterLimit;
+                case "LargeThruster":
+                    return slotLimitsInitialized
+                        ? Mathf.Max(level.largeThrusterLimit, grandfatheredLargeThrusterLimit)
+                        : level.largeThrusterLimit;
+                default:
+                    return 0;
             }
         }
 

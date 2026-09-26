@@ -44,4 +44,12 @@
   <PU_AutoUseGravEnergyLabel>自动使用逆重能量</PU_AutoUseGravEnergyLabel>
   <PU_AutoUseGravEnergyDesc>起飞时自动消耗逆重能量，在当前等级允许的比例内返还化合燃料。关闭后会保留全部能量。</PU_AutoUseGravEnergyDesc>
   <PU_GravEnergyFuelSaved>逆重能量抵消了 {0} 化合燃料；本次实际消耗 {1}。</PU_GravEnergyFuelSaved>
+  <PU_InfoGravUpgradeLevel>逆重引擎升级等级</PU_InfoGravUpgradeLevel>
+  <PU_InfoGravFacilitySlots>设施连接上限</PU_InfoGravFacilitySlots>
+  <PU_InfoGravPowerOutput>内置发电功率</PU_InfoGravPowerOutput>
+  <PU_InfoGravEnergyStorage>逆重能量容量</PU_InfoGravEnergyStorage>
+  <PU_InfoGravEnergyRecharge>逆重能量充能速度</PU_InfoGravEnergyRecharge>
+  <PU_InfoGravFuelOffset>单次起飞最大燃料抵消</PU_InfoGravFuelOffset>
+  <PU_GravSlotValue>{0} 场扩展器 / {1} 小型 / {2} 大型</PU_GravSlotValue>
+  <PU_GravPerDayValue>每日 +{0}</PU_GravPerDayValue>
 </LanguageData>

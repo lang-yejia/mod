@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>PracticalUpgrades.PickleSteps</AssemblyName>
+    <RootNamespace>PracticalUpgrades.PickleTests</RootNamespace>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>..\..\Pickle\Assemblies\</OutputPath>
+    <RimWorldDir Condition="'$(RimWorldDir)' == ''">F:\SteamLibrary\steamapps\common\RimWorld</RimWorldDir>
+    <HarmonyDir Condition="'$(HarmonyDir)' == ''">F:\SteamLibrary\steamapps\workshop\content\294100\2009463077</HarmonyDir>
+    <PickleDir Condition="'$(PickleDir)' == ''">$(MSBuildProjectDirectory)\..\..\..\.tools\Rimworld-Pickle</PickleDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PracticalUpgrades\PracticalUpgrades.csproj">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(RimWorldDir)\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(RimWorldDir)\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(HarmonyDir)\Current\Assemblies\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="RimWorks.Pickle">
+      <HintPath>$(PickleDir)\Assemblies\RimWorks.Pickle.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

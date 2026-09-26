@@ -44,4 +44,12 @@
   <PU_AutoUseGravEnergyLabel>Auto-use grav energy</PU_AutoUseGravEnergyLabel>
   <PU_AutoUseGravEnergyDesc>Automatically spend grav energy on launch and refund chemfuel up to this upgrade level's limit. Disable this to save all stored energy.</PU_AutoUseGravEnergyDesc>
   <PU_GravEnergyFuelSaved>Grav energy offset {0} chemfuel; this launch consumed {1}.</PU_GravEnergyFuelSaved>
+  <PU_InfoGravUpgradeLevel>Grav engine upgrade level</PU_InfoGravUpgradeLevel>
+  <PU_InfoGravFacilitySlots>Facility connection limits</PU_InfoGravFacilitySlots>
+  <PU_InfoGravPowerOutput>Built-in power output</PU_InfoGravPowerOutput>
+  <PU_InfoGravEnergyStorage>Grav energy capacity</PU_InfoGravEnergyStorage>
+  <PU_InfoGravEnergyRecharge>Grav energy recharge</PU_InfoGravEnergyRecharge>
+  <PU_InfoGravFuelOffset>Maximum launch fuel offset</PU_InfoGravFuelOffset>
+  <PU_GravSlotValue>{0} extenders / {1} small / {2} large</PU_GravSlotValue>
+  <PU_GravPerDayValue>+{0} / day</PU_GravPerDayValue>
 </LanguageData>

@@ -62,7 +62,7 @@
     <label>grav-field calibration assembly</label>
     <description>A set of field sensors, uranium resonators, and control hardware used to perform the first grav engine upgrade.</description>
     <graphicData>
-      <texPath>PracticalUpgrades/Items/PrecisionToolModule</texPath>
+      <texPath>PracticalUpgrades/Items/GravFieldCalibrationAssembly</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
     </graphicData>
@@ -77,7 +77,7 @@
     <label>grav resonance controller</label>
     <description>A precisely tuned gravitic control unit that expands the engine's facility control capacity and recovers otherwise wasted field energy.</description>
     <graphicData>
-      <texPath>PracticalUpgrades/Items/UltraPrecisionToolModule</texPath>
+      <texPath>PracticalUpgrades/Items/GravResonanceController</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
     </graphicData>
@@ -92,7 +92,7 @@
     <label>multiphase grav core</label>
     <description>A gravcore rebuilt into a multiphase regulator capable of coordinating a fully equipped gravship while storing large amounts of gravitic energy.</description>
     <graphicData>
-      <texPath>PracticalUpgrades/Items/PersonaToolController</texPath>
+      <texPath>PracticalUpgrades/Items/MultiphaseGravCore</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,1)</drawSize>
     </graphicData>
