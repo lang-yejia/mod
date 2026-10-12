@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CowHerdManager.ToggleLabel>Manage cow wandering</CowHerdManager.ToggleLabel>
+  <CowHerdManager.ToggleDesc>Nearby player-owned cows wait instead of taking idle wander jobs. Eating, milk, pregnancy and health continue normally.</CowHerdManager.ToggleDesc>
+  <CowHerdManager.Managed>managed</CowHerdManager.Managed>
+  <CowHerdManager.Vanilla>vanilla</CowHerdManager.Vanilla>
+  <CowHerdManager.Inspect>Cow wandering: {0} (30 cells)</CowHerdManager.Inspect>
+</LanguageData>

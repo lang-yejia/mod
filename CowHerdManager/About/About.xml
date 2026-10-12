@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Cow Herd Manager (Prototype)</name>
+  <author>lang-yejia</author>
+  <packageId>langyejia.cowherdmanager</packageId>
+  <supportedVersions><li>1.6</li></supportedVersions>
+  <description>Adds a herd manager post that replaces idle wandering for nearby player-owned cows with stationary waiting. Cows remain spawned and keep normal needs, health, reproduction and milk production. Experimental: measure in a copied save.</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter><li>brrainz.harmony</li></loadAfter>
+</ModMetaData>

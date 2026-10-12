@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>CowHerdManagerPost</defName>
+    <label>cow herd manager post</label>
+    <description>Reduces idle wandering for player-owned cows within 30 cells while active. Cows still eat, produce milk, reproduce, and receive health care. Place it near the herd and toggle it to compare behavior.</description>
+    <thingClass>CowHerdManager.Building_CowHerdManagerPost</thingClass>
+    <designationCategory>Misc</designationCategory>
+    <uiOrder>2066</uiOrder>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories><li>BuildingsMisc</li></thingCategories>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.15</fillPercent>
+    <pathCost>0</pathCost>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>8</Mass>
+      <WorkToBuild>600</WorkToBuild>
+      <Flammability>1</Flammability>
+    </statBases>
+    <stuffCategories><li>Metallic</li><li>Woody</li><li>Stony</li></stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <rotatable>false</rotatable>
+    <building><isInert>true</isInert></building>
+    <graphicData>
+      <texPath>Things/Building/Furniture/PenMarker</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+</Defs>

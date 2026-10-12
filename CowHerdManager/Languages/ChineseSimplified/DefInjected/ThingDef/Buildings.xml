@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CowHerdManagerPost.label>牛群管理桩</CowHerdManagerPost.label>
+  <CowHerdManagerPost.description>启用时，让周围 30 格内的玩家牛减少空闲游荡。牛仍正常进食、产奶、繁殖与接受照料。可以随时关闭。</CowHerdManagerPost.description>
+</LanguageData>

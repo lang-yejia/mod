@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CowHerdManager.ToggleLabel>管理牛的游荡</CowHerdManager.ToggleLabel>
+  <CowHerdManager.ToggleDesc>附近的玩家牛在空闲时原地等待，减少游荡寻路。进食、产奶、怀孕和健康仍按原版运行。</CowHerdManager.ToggleDesc>
+  <CowHerdManager.Managed>已管理</CowHerdManager.Managed>
+  <CowHerdManager.Vanilla>原版</CowHerdManager.Vanilla>
+  <CowHerdManager.Inspect>牛的游荡：{0}（30 格）</CowHerdManager.Inspect>
+</LanguageData>
